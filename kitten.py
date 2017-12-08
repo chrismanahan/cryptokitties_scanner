@@ -32,7 +32,7 @@ def getKittenByGen(gen_id,stype,good_array,virgin = False):
                         if attribute in good_array and (len(cattribute['children']) == 0 or not virgin):
                             print("Gen : ",gen)
                             print("ID : ",kitty_id)
-                            print("Price : ",int(each['current_price'])/1000000000000000000)
+                            print("Price : ",float(each['current_price'])/1000000000000000000)
                             print(",".join(cattribute_list) )
                             print("No. of childs: ",len(cattribute['children']))
                             print("=====================================================")
